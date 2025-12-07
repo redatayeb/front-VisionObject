@@ -30,11 +30,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  camera: ^0.10.0+1
+  image_picker: ^1.2.1
+  camera: ^0.11.0+1
+  tflite_flutter: ^0.12.1
+  image: ^4.2.0
+  permission_handler: ^11.3.1
+  http: ^1.2.0
+  flutter_tts: ^3.8.5
+
+
+
+
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +65,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  assets:
+    - assets/model/model.tflite
+    - assets/model/labels.txt   # ou label.txt si tu gardes ce nom 
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
